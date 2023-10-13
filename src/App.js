@@ -15,6 +15,9 @@ import Login from "./components/login/login";
 
 import Profile from "./components/Profile/profile";
 import Traveler from "./components/pages/Traveler/Traveler";
+import UpdateTravelAccount from "./components/pages/Traveler/UpdateTravelAccount";
+import CreateSheddule from "./components/pages/Home/CreateSheddule";
+import AddBooking from "./components/pages/Traveler/AddBooking";
 
 function App() {
   return (
@@ -26,7 +29,15 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/mainLogin" component={MainLogin} />
           <Route exact path="/profile" component={Profile} />
+
+
           <Route exact path="/traveler" component={Traveler} />
+          <Route exact path="/updateTravelAccount" component={UpdateTravelAccount} />
+          <Route exact path="/addBooking" component={AddBooking} />
+
+
+
+          <Route exact path="/createTrain" component={CreateSheddule} />
 
           <Redirect to="/mainLogin" component={MainLogin} />
         </Switch>
